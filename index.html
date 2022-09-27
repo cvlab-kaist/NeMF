@@ -223,7 +223,7 @@
 		<table align=center width=850px>
 			<tr>
 				<td>
-					Unlike existing methods that explicitly compute and store discrete matching field defined at low resolution, we implicitly represent a high-dimensional 4D matching field with deep fully-connected networks defined at arbitrary original image resolution.
+					Figure 1: Unlike existing methods that explicitly compute and store discrete matching field defined at low resolution, we implicitly represent a high-dimensional 4D matching field with deep fully-connected networks defined at arbitrary original image resolution.
 				</td>
 			</tr>
 		</table>
@@ -235,7 +235,7 @@
 		<center><h1>Abstract</h1></center>
 		<tr>
 			<td>
-				Existing pipelines of semantic correspondence commonly include extracting high level semantic features for the invariance against intra-class variations and back- ground clutters. This architecture, however, inevitably results in a low-resolution matching field that additionally requires an ad-hoc interpolation process as a post-processing for converting it into a high-resolution one, certainly limiting the overall performance of matching results. To overcome this, inspired by recent success of implicit neural representation, we present a novel method for seman- tic correspondence, called neural matching field (NeMF). However, complicacy and high-dimensionality of a 4D matching field are the major hindrances. To address them, we propose a cost embedding network consisting of convolution and self-attention layers to process the coarse cost volume to obtain cost feature representation, which is used as a guidance for establishing high-precision match- ing field through the following fully-connected network. Although this may help to better structure the matching field, learning a high-dimensional matching field remains challenging mainly due to computational complexity, since a naïve ex- haustive inference would require querying from all pixels in the 4D space to infer pixel-wise correspondences. To overcome this, in the training phase, we randomly sample matching candidates. In the inference phase, we propose a novel inference approach which iteratively performs PatchMatch-based inference and coordinate optimization at test time. With the proposed method, competitive results are at- tained on several standard benchmarks for semantic correspondence.
+				Existing pipelines of semantic correspondence commonly include extracting high level semantic features for the invariance against intra-class variations and background clutters. This architecture, however, inevitably results in a low-resolution matching field that additionally requires an ad-hoc interpolation process as a post-processing for converting it into a high-resolution one, certainly limiting the overall performance of matching results. To overcome this, inspired by recent success of implicit neural representation, we present a novel method for semantic correspondence, called neural matching field (NeMF). However, complicacy and high-dimensionality of a 4D matching field are the major hindrances. To address them, we propose a cost embedding network consisting of convolution and self-attention layers to process the coarse cost volume to obtain cost feature representation, which is used as a guidance for establishing high-precision matching field through the following fully-connected network. Although this may help to better structure the matching field, learning a high-dimensional matching field remains challenging mainly due to computational complexity, since a naïve ex- haustive inference would require querying from all pixels in the 4D space to infer pixel-wise correspondences. To overcome this, in the training phase, we randomly sample matching candidates. In the inference phase, we propose a novel inference approach which iteratively performs PatchMatch-based inference and coordinate optimization at test time. With the proposed method, competitive results are at- tained on several standard benchmarks for semantic correspondence.
 			</td>
 		</tr>
 	</table>
@@ -257,7 +257,7 @@
 		<center>
 			<tr>
 				<td>
-					Given a pair of images as an input, we first extract features using CNNs and compute an initial noisy cost volume at low resolution. We feed the noisy cost volume with the proposed encoder consisting of convolution and Transformer, and decode with deep fully connected networks by taking the encoded cost and coordinates as inputs.
+					Figure 2: Given a pair of images as an input, we first extract features using CNNs and compute an initial noisy cost volume at low resolution. We feed the noisy cost volume with the proposed encoder consisting of convolution and Transformer, and decode with deep fully connected networks by taking the encoded cost and coordinates as inputs.
 				</td>
 			</tr>
 		</center>
@@ -280,7 +280,7 @@
 		<center>
 			<tr>
 				<td>
-					Quantitative evaluation on standard benchmarks : Higher PCK is better. The best results are in bold, and the second best results are underlined. All results are taken from the papers. Eval. Reso.: Evaluation Resolution, Flow Reso.: Flow Resolution.</td>
+					Table 1: Quantitative evaluation on standard benchmarks : Higher PCK is better. The best results are in bold, and the second best results are underlined. All results are taken from the papers. Eval. Reso.: Evaluation Resolution, Flow Reso.: Flow Resolution.</td>
 			</tr>
 		</center>
 	</table>
@@ -297,7 +297,7 @@
 		<center>
 			<tr>
 				<td>
-					Per-class quantitative evaluation on SPair-71k benchmark.</td>
+					Table 2: Per-class quantitative evaluation on SPair-71k benchmark.</td>
 			</tr>
 		</center>
 	</table>
@@ -321,7 +321,7 @@
 		<center>
 			<tr>
 				<td>
-					Qualitative results on PF-PASCAL : keypoint transfer results by (a), (c) CATs and (b), (d) NeMF. Green and red line denote correct and wrong prediction (αimg = 0.1), respectively. Note that correspondences are estimated at the original resolutions of images.
+					Figure 3: Qualitative results on PF-PASCAL : keypoint transfer results by (a), (c) CATs and (b), (d) NeMF. Green and red line denote correct and wrong prediction (αimg = 0.1), respectively. Note that correspondences are estimated at the original resolutions of images.
 				</td>
 			</tr>
 		</center>
