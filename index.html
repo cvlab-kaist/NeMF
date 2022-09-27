@@ -242,7 +242,7 @@
 	<br>
 	<hr>
 
-	<center><h1> Network Configuration </h1></center>
+	<!-- <center><h1> Overview Architecture </h1></center>
 	
 	<table align=center width=600px>
 		<tr>
@@ -257,7 +257,7 @@
 		<center>
 			<tr>
 				<td>
-					We propose a language-driven Image-to-Image translation framework with candidate "dataset-level" domain annotations, which is more practical than fully-unsupervised methods in the real-world.
+					Given a pair of images as an input, we first extract features using CNNs and compute an initial noisy cost volume at low resolution. We feed the noisy cost volume with the proposed encoder consisting of convolution and Transformer, and decode with deep fully connected networks by taking the encoded cost and coordinates as inputs.
 				</td>
 			</tr>
 		</center>
