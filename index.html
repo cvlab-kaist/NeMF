@@ -248,7 +248,7 @@
 		<tr>
 			<td align=center width=600px>
 				<center>
-					<td><img class="round" style="width:1100px" src="./resources/figure_2.pdf"/></td>
+					<td><img class="round" style="width:1100px" src="./resources/figure_2.png"/></td>
 				</center>
 			</td>
 		</tr>
@@ -259,6 +259,45 @@
 				<td>
 					Given a pair of images as an input, we first extract features using CNNs and compute an initial noisy cost volume at low resolution. We feed the noisy cost volume with the proposed encoder consisting of convolution and Transformer, and decode with deep fully connected networks by taking the encoded cost and coordinates as inputs.
 				</td>
+			</tr>
+		</center>
+	</table>
+	<br>
+	<hr>
+	
+        <center><h1> Quantitative Results </h1></center>
+
+	<table align=center width=600px>
+		<tr>
+			<td align=center width=600px>
+				<center>
+					<td><img class="round" style="width:800px" src="./resources/quan_on_std.png"/></td>
+				</center>
+			</td>
+		</tr>
+	</table>
+	<table align=center width=850px>
+		<center>
+			<tr>
+				<td>
+					Quantitative evaluation on standard benchmarks : Higher PCK is better. The best results are in bold, and the second best results are underlined. All results are taken from the papers. Eval. Reso.: Evaluation Resolution, Flow Reso.: Flow Resolution.</td>
+			</tr>
+		</center>
+	</table>
+        <table align=center width=600px>
+		<tr>
+			<td align=center width=600px>
+				<center>
+					<td><img class="round" style="width:800px" src="./resources/quan_spair.png"/></td>
+				</center>
+			</td>
+		</tr>
+	</table>
+	<table align=center width=850px>
+		<center>
+			<tr>
+				<td>
+					Per-class quantitative evaluation on SPair-71k [49] benchmark.</td>
 			</tr>
 		</center>
 	</table>
