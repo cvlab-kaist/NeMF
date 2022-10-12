@@ -97,7 +97,8 @@ if __name__ == "__main__":
     model.eval()
 
     train_started = time.time()
-
+    
+    # For fast optimization
     val_mean_pck = optimize.test_epoch_fast(model,
                                             test_dataloader,
                                             device) 

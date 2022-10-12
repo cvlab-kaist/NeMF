@@ -284,7 +284,9 @@ class MLPTrainer(nn.Module):
                 corr = rearrange(corr, 'B H W C -> B C H W')
                 corr.data.copy_(torch.clamp(corr, corr_prev - alpha, corr_prev + alpha))
         
+        # For fast optimization
         flow = self.optimize_fast(refined_corr, projected_corr, src_kps, trg_kps, src_imsize, trg_imsize, src_coord=corr)
+
         # flow = self.optimize(refined_corr, projected_corr, src_imsize, trg_imsize, src_coord=corr, last=True)
            
         return flow
