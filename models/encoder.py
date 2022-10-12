@@ -1,4 +1,9 @@
 
+r'''
+modification of CATs Transformer Aggregator
+https://github.com/SunghwanHong/Cost-Aggregation-transformers
+'''
+
 from operator import add
 from functools import reduce, partial
 
@@ -15,11 +20,6 @@ from utils.flow_util import unnormalise_and_convert_mapping_to_flow
 from models.base.cost_embedding import CostEmbedding4d_8, CostEmbedding4d_16, CostEmbedding4d_32, CostEmbedding4d_64
 
 time_list = []
-
-r'''
-modification of CATs Transformer Aggregator
-https://github.com/SunghwanHong/Cost-Aggregation-transformers
-'''
 
 class Mlp(nn.Module):
     def __init__(self, in_features, hidden_features=None, out_features=None, act_layer=nn.GELU, drop=0.):
