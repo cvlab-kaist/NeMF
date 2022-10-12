@@ -1,8 +1,3 @@
-r'''
-    modified test script of GLU-Net
-    https://github.com/PruneTruong/GLU-Net
-'''
-
 import argparse
 import pickle
 import random
