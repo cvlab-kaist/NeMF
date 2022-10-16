@@ -1,7 +1,7 @@
 ## Neural Matching Fields: Implicit Representation of Matching Fields for Visual Correspondence  (NeurIPS'22)
 This is the implementation of the paper "Neural Matching Fields: Implicit Representation of Matching Fields for Visual Correspondence" by Sunghwan Hong, Jisu Nam, Seokju Cho, Susung Hong, Sangryul Jeon, Dongbo Min and Seungryong Kim. \
 \
-For more information, check out the paper on [[arXiv](https://arxiv.org/pdf/2210.02689.pdf)]. \
+For more information, check out the paper on [[arXiv](https://arxiv.org/pdf/2210.02689.pdf)] and the [[project page](https://ku-cvlab.github.io/NeMF)]. \
 Training code will be updated soon.. 
 
 # Overall Architecture
