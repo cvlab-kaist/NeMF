@@ -38,7 +38,7 @@ pip install tensorboardX termcolor timm tqdm requests pandas einops matplotlib
 ![alt text](/images/Inference.png)
 
 
-- Download pre-trained weights on [Link](https://drive.google.com/drive/folders/1t_WNfMIsIgC61Yf9DL8W9zoDp9zcVbck) 
+- Download pre-trained weights on [Link]([https://drive.google.com/drive/folders/1t_WNfMIsIgC61Yf9DL8W9zoDp9zcVbck](https://drive.google.com/drive/folders/11kP1z0AmAl-Cb_MTLG7ViC3EHVoPZgHd?usp=sharing)) 
 
 
 Result on SPair-71k :
